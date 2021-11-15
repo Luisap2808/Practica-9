@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+int arreglo[60];
+int i;
+for (i=0;i<59;i++){
+    arreglo[i]=rand()/1000000000;
+}
+
+for(i=0;i<59;i++){
+    if(arreglo[i]<0){
+printf("El numero %i es negativo\n",arreglo[i]);
+    }
+    if(arreglo[i]==0){
+printf("El numero %i es igual a 0\n",arreglo[i]);
+    }
+    if(arreglo[i]>0){
+printf("El numero %i es positivo\n",arreglo[i]);
+    }
+}
+
+
+
+
+
+
+
+}
